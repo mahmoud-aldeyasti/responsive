@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 *{
     
     font-family: 'Josefin Sans', sans-serif;
@@ -8,6 +13,7 @@
     text-transform: capitalize;
     outline: 0px;
     scroll-behavior: smooth;
+    transition: all 0.3s linear;
 }
 
 
@@ -18,6 +24,7 @@
     --main-black:#444444;
     --main-gray:#A9A9A9;
     --back-gray:#F5F5F5;
+    font-size: 16px;
 }
 
 .html{
@@ -44,7 +51,13 @@ header{
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    min-height: 65vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
 }
 
 
@@ -63,6 +76,7 @@ header{
     color: var(--main-red);
     font-weight: 200;
     margin-left: -5%;
+    cursor: pointer;
 }
 
 nav{
@@ -86,6 +100,9 @@ nav{
 
 .contain{
     text-align: center;
+    width:100%;
+    min-height:40vh;
+   
     
     
 }
@@ -112,4 +129,272 @@ nav{
 .contain p{
     color: var(--main-gray);
     text-transform: none;
+}
+
+
+/* ______________________ about us___________________________ */
+.about{
+    min-height: 40vh;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.about h1{
+display: inline-block;
+text-transform: uppercase;
+font-size: 2.4rem;
+line-height: 1.7;
+font-weight: 600;
+letter-spacing: 3px;
+margin: 60px 0px 20px 0px;
+}
+
+.about p{
+    color: var(--main-gray);
+    line-height: 1.4;
+    width: 80%;
+    margin: 20px 10% 20px 10%;
+    font-size: 0.83rem;
+    text-transform: none;
+}
+
+.about a{
+    color: var(--main-red);
+    border: 2px solid var(--main-red);
+    font-size: 1.2rem;
+    padding: 0.5rem 2.5rem;
+    margin: 20px 0px;
+    cursor: pointer;
+
+}
+
+
+
+/* ______________________ our services ____________________ */
+.services{
+    background-color: var(--back-gray);
+    text-align: center;
+    min-height: 80vh;
+}
+
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 1.7;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 60px 0px 20px 0px;
+    }
+
+.services p{
+    color: var(--main-gray);
+    line-height: 1.4;
+    width: 80%;
+    margin: 20px 10% 20px 10%;
+    font-size: 0.85rem;
+    text-transform: none;
+}
+
+.services1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+.service{
+    flex-basis: 380px;
+    min-height: 55vh;
+    margin: 30px;
+}
+
+.service .image{
+    width: 100%;
+    height: 49vh;
+
+}
+.service .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.service h2{
+    color: var(--main-red);
+    text-transform: none;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 30px 20px 20px 20px;
+}
+.service p{
+    width: 100%;
+    font-size: 0.9rem;
+    margin:  20px 0px ;
+    padding: 0px;
+}
+
+
+/* ___________________ contact us ______________________ */
+.contact{
+    min-height: 68vh;
+    text-align: center;
+}
+.contact h1{
+display: inline-block;
+text-transform: uppercase;
+font-size: 2.4rem;
+line-height: 1.7;
+font-weight: 600;
+letter-spacing: 4px;
+margin: 60px 0px 20px 0px;
+}
+
+.contact input{
+    color: black;
+    border: 1px solid var(--main-gray);
+    margin: 7px 0px;
+    width: 250px;
+    padding: 8px 20px;
+
+}
+
+.contact textarea{
+    resize: none;
+    width: 250px;
+    min-height: 80px;
+    margin: 7px 0px;
+    padding: 8px 20px;
+    border: 1px solid var(--main-gray);
+}
+
+.contact textarea::placeholder , .contact input::placeholder{
+    font-size: 0.8srem;
+    line-height: 1.4;
+
+}
+input[type="submit"]{
+    color: var(--main-red);
+    background-color: white;
+    width: 180px;
+    font-size: 0.9rem;
+    border: 1px solid var(--main-red);;
+    margin-top: 13px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+/* _________________________ team ________________________ */
+.team{
+    min-height: 120vh;
+    background-color: var(--back-gray);
+    text-align: center;
+}
+
+.team h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 1.7;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 60px 0px 20px 0px;
+}
+
+.teama{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.teama  .image{
+    margin: 15px 40px;
+    width: 375px;
+    height: 429px;
+    overflow: hidden;
+}
+.teama img{
+    cursor: pointer;
+ 
+    width: 100%;
+    height: 100%;
+
+}
+
+.teama img:hover{
+    transform: scale(1.1);
+}
+
+
+/* _____________________ footer ________________________ */
+footer{
+    width: 100%;
+    background-color: var(--main-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    color: white;
+    line-height: 1.6;
+    font-size: 1.2rem;
+
+    text-align: center;
+}
+footer p{
+    margin: 10px 0px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+@media (max-width:600px){
+    .html{
+        font-size: 12px;
+    }
+    :root{
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width:400px){
+    .head {
+        padding-top: 10px;
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    
+    .head h1{
+        margin-left: 0%;
+    }
+    
+
+         
+        
+
+    .contain h1{
+        font-size: 1.9em;
+    
+    }
+    
+    .contain h2{
+        margin: 5px 0px 18px 0px;
+        font-size: 1.9em;
+        color: var(--main-red);
+        text-transform: uppercase;
+       
+    }
+
+    .about h1 , .contact h1 , .team h1 , .services h1{
+        font-size: 2rem;
+    }
+    
+
 }
